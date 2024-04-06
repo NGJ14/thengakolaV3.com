@@ -50,6 +50,7 @@ a {
   background: var(--tertiary);
   color: #000;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   z-index: 100;
 }
 .titleBar {
@@ -70,6 +71,7 @@ a {
   background: var(--tertiary);
   color: #000;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   z-index: 100;
 }
 .nameTitle {
@@ -102,6 +104,8 @@ a {
   border-radius: 25px;
   margin: 12px 12px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 12px;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -168,7 +172,6 @@ a {
   padding-left: 15px;
   flex-direction: column;
   padding-bottom: 10px;
-  backdrop-filter: blur(1.5px);
 }
 .cardName {
   font-size: 2rem;
@@ -288,6 +291,7 @@ a {
   padding: 4px 0;
   background: rgba(0, 0, 0, 0.9);
   backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   color: var(--secondary);
   font-weight: 900;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
