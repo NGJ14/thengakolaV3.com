@@ -1,11 +1,7 @@
-@import url("https://googleapis.com/css2?family=Ultra&display=swap");
-
 :root {
-
   --primary: lightsalmon;
   --secondary: rgb(255, 208, 190);
   --tertiary: rgba(255, 160, 122, 0.57);
-
 }
 
 * {
@@ -25,7 +21,7 @@
 }
 body {
   background: var(--secondary);
-  background-image: url('./images/backgrounds/bg4.png');
+  background-image: url("./images/backgrounds/bg4.png");
   background-size: contain;
   background-attachment: fixed;
   -webkit-tap-highlight-color: transparent;
@@ -101,6 +97,7 @@ a {
   background-image: url("./images/backgrounds/bg4.png");
   background-blend-mode: difference;
   height: 22vh;
+  width: 95vw;
   border: 3px solid black;
   border-radius: 25px;
   margin: 12px 12px;
@@ -222,7 +219,8 @@ a {
   width: 100%;
 }
 .avatar img {
-  height: 100%;
+  height: 17.5vh;
+  width: 17.5vh;
   filter: grayscale();
 }
 .statusBall {
@@ -267,6 +265,7 @@ a {
   filter: grayscale();
   margin-top: 2vh;
   width: 50%;
+  width: 50%;
 }
 .dayBox {
   display: flex;
@@ -276,7 +275,6 @@ a {
   align-items: center;
   margin-bottom: 20px;
 }
-
 
 .dayName {
   display: flex;
@@ -390,7 +388,7 @@ a {
 #profilePage {
   display: none;
   background: var(--secondary);
-  background-image: url('./images/backgrounds/bg4.png');
+  background-image: url("./images/backgrounds/bg4.png");
   background-size: contain;
   background-attachment: fixed;
   -webkit-tap-highlight-color: transparent;
@@ -399,8 +397,8 @@ a {
   user-select: none;
 }
 
-.freeName{
+.freeName {
   font-size: 2rem;
-  	font-style: italic;
-text-shadow: 4px 3px 0px var(--secondary), 9px 8px 0px rgba(0,0,0,0.15);
+  font-style: italic;
+  text-shadow: 4px 3px 0px var(--secondary), 9px 8px 0px rgba(0, 0, 0, 0.15);
 }

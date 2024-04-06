@@ -94,11 +94,10 @@ function openPopup(e, name) {
   });
   e.stopImmediatePropagation();
 
-  let img_src = "./images/avatars/" + name + ".png";
+  let img_src = "./images/avatars/" + name + ".webp";
   popup.getElementsByTagName("img")[0].setAttribute("src", img_src);
   popup.style.display = "block";
   closeButton.style.display = "block";
-
 
   let list = popup.getElementsByClassName("popDayBox")[0];
   let ball_row = popup.getElementsByClassName("statusBallVertical")[0];
@@ -126,7 +125,7 @@ function goHome() {
 function openProfilePage(name) {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-  let img_src = "./images/avatars/" + name + ".png";
+  let img_src = "./images/avatars/" + name + ".webp";
   all.style.display = "none";
   profilePage.style.display = "block";
   profilePage.getElementsByTagName("img")[0].setAttribute("src", img_src);
@@ -175,7 +174,7 @@ function writeData(index, name, periodsToday) {
   let infoBox = infoBoxes[index];
   let box = cardSections[index];
 
-  let img_src = "./images/avatars/" + name + ".png";
+  let img_src = "./images/avatars/" + name + ".webp";
   let img = card.getElementsByTagName("img")[0];
   img.setAttribute("src", img_src);
   img.onclick = function () {
