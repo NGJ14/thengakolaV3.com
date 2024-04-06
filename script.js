@@ -15,7 +15,7 @@ var popup = document.getElementById("PUR");
 var closeButton = document.getElementById("closePop");
 var cards = document.getElementsByClassName("card");
 
-const now = new Date(Date.parse("2024-04-09T15:30:00.000+05:30"));
+const now = new Date(Date.now());
 const day = (now.getDay() - 1 + 7) % 7;
 
 var ordered_names = [
