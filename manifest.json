@@ -1,15 +1,11 @@
 {
-  "id": "/",
-  "Scope": "/",
   "background_color": "#ffffff",
   "theme_color": "#000000",
   "description": "thengakola's 3rd edition of timetable webApp",
   "display": "fullscreen",
   "name": "thengakola",
-  "lang": "english",
   "short_name": "thengakola",
-  "start_url": "https://ngj14.github.io/thengakolaV3.com/",
-  "form_factor": "narrow",
+  "start_url": ".",
   "orientation": "portrait",
   "icons": [
     {
