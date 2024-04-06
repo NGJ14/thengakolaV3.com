@@ -1,0 +1,254 @@
+[
+	[
+		{
+			"title": "BMAT205P",
+			"venue": "SJT503",
+			"timings": [
+				8,
+				0,
+				8,
+				50
+			]
+		},
+		{
+			"title": "BHUM106P",
+			"venue": "TT423",
+			"timings": [
+				10,
+				0,
+				10,
+				50
+			]
+		},
+		{
+			"title": "BECE102P",
+			"venue": "SJT311",
+			"timings": [
+				11,
+				0,
+				11,
+				50
+			]
+		},
+		{
+			"title": "BCSE103P",
+			"venue": "SJT324",
+			"timings": [
+				12,
+				0,
+				12,
+				50
+			]
+		},
+		{
+			"title": "BSTS202P",
+			"venue": "SJT404",
+			"timings": [
+				16,
+				0,
+				16,
+				50
+			]
+		},
+		{
+			"title": "BENG102L",
+			"venue": "SJT721",
+			"timings": [
+				17,
+				40,
+				19,
+				20
+			]
+		}
+	],
+	[
+		{
+			"title": "BECE102P",
+			"venue": "SJT311",
+			"timings": [
+				8,
+				0,
+				8,
+				50
+			]
+		},
+		{
+			"title": "BESP101P",
+			"venue": "SJT423",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BMAT201P",
+			"venue": "SJT301",
+			"timings": [
+				11,
+				0,
+				11,
+				50
+			]
+		},
+		{
+			"title": "BMAT205P",
+			"venue": "SJT503",
+			"timings": [
+				12,
+				0,
+				12,
+				50
+			]
+		},
+		{
+			"title": "BECE102L",
+			"venue": "SJT317",
+			"timings": [
+				15,
+				51,
+				17,
+				30
+			]
+		}
+	],
+	[
+		{
+			"title": "BMAT201P",
+			"venue": "SJT301",
+			"timings": [
+				8,
+				0,
+				8,
+				50
+			]
+		},
+		{
+			"title": "BMAT205P",
+			"venue": "SJT503",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BCSE103L",
+			"venue": "SJT318",
+			"timings": [
+				14,
+				0,
+				15,
+				40
+			]
+		},
+		{
+			"title": "BSTS202P",
+			"venue": "SJT404",
+			"timings": [
+				17,
+				0,
+				17,
+				50
+			]
+		}
+	],
+	[
+		{
+			"title": "BHUM106P",
+			"venue": "TT423",
+			"timings": [
+				8,
+				0,
+				8,
+				50
+			]
+		},
+		{
+			"title": "BECE102P",
+			"venue": "SJT311",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BESP101P",
+			"venue": "SJT423",
+			"timings": [
+				10,
+				0,
+				10,
+				50
+			]
+		},
+		{
+			"title": "BMAT201P",
+			"venue": "SJT301",
+			"timings": [
+				12,
+				0,
+				12,
+				50
+			]
+		},
+		{
+			"title": "BSTS202P",
+			"venue": "SJT404",
+			"timings": [
+				14,
+				0,
+				14,
+				50
+			]
+		},
+		{
+			"title": "BCSE103L",
+			"venue": "SJT318",
+			"timings": [
+				17,
+				40,
+				19,
+				20
+			]
+		}
+	],
+	[
+		{
+			"title": "BMAT201P",
+			"venue": "SJT301",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BMAT205P",
+			"venue": "SJT503",
+			"timings": [
+				10,
+				0,
+				10,
+				50
+			]
+		},
+		{
+			"title": "BHUM106P",
+			"venue": "TT423",
+			"timings": [
+				12,
+				0,
+				12,
+				50
+			]
+		}
+	],
+	[],
+	[]
+]

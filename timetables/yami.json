@@ -1,0 +1,234 @@
+[
+	[
+		{
+			"title": "BCSE102L",
+			"venue": "PRP118a",
+			"timings": [
+				8,
+				0,
+				9,
+				40
+			]
+		},
+		{
+			"title": "BCSE202P",
+			"venue": "PRP126",
+			"timings": [
+				14,
+				0,
+				14,
+				50
+			]
+		},
+		{
+			"title": "BSTS101P",
+			"venue": "PRP111",
+			"timings": [
+				15,
+				0,
+				15,
+				50
+			]
+		},
+		{
+			"title": "BEEE102P",
+			"venue": "PRP313",
+			"timings": [
+				16,
+				0,
+				16,
+				50
+			]
+		}
+	],
+	[
+		{
+			"title": "BEEE102L",
+			"venue": "SJT520",
+			"timings": [
+				9,
+				51,
+				11,
+				30
+			]
+		},
+		{
+			"title": "BCSE102P",
+			"venue": "PRP318",
+			"timings": [
+				15,
+				0,
+				15,
+				50
+			]
+		},
+		{
+			"title": "BENG101P",
+			"venue": "PRP105",
+			"timings": [
+				16,
+				0,
+				16,
+				50
+			]
+		},
+		{
+			"title": "BMAT102P",
+			"venue": "PRPG26",
+			"timings": [
+				17,
+				0,
+				17,
+				50
+			]
+		}
+	],
+	[
+		{
+			"title": "BMAT102P",
+			"venue": "PRPG26",
+			"timings": [
+				14,
+				0,
+				14,
+				50
+			]
+		},
+		{
+			"title": "BCSE202P",
+			"venue": "PRP126",
+			"timings": [
+				15,
+				0,
+				15,
+				50
+			]
+		},
+		{
+			"title": "BSTS101P",
+			"venue": "PRP111",
+			"timings": [
+				16,
+				0,
+				16,
+				50
+			]
+		},
+		{
+			"title": "BEEE102P",
+			"venue": "PRP313",
+			"timings": [
+				17,
+				0,
+				17,
+				50
+			]
+		}
+	],
+	[
+		{
+			"title": "BENG101L",
+			"venue": "SJT519",
+			"timings": [
+				9,
+				51,
+				11,
+				30
+			]
+		},
+		{
+			"title": "BCSE202L",
+			"venue": "PRP118a",
+			"timings": [
+				11,
+				40,
+				13,
+				20
+			]
+		},
+		{
+			"title": "BEEE102P",
+			"venue": "PRP313",
+			"timings": [
+				14,
+				0,
+				14,
+				50
+			]
+		},
+		{
+			"title": "BCSE102P",
+			"venue": "PRP318",
+			"timings": [
+				16,
+				0,
+				16,
+				50
+			]
+		},
+		{
+			"title": "BMAT102P",
+			"venue": "PRPG26",
+			"timings": [
+				18,
+				0,
+				18,
+				50
+			]
+		}
+	],
+	[
+		{
+			"title": "BCSE102L",
+			"venue": "PRP118a",
+			"timings": [
+				11,
+				40,
+				13,
+				20
+			]
+		},
+		{
+			"title": "BENG101P",
+			"venue": "PRP105",
+			"timings": [
+				14,
+				0,
+				14,
+				50
+			]
+		},
+		{
+			"title": "BMAT102P",
+			"venue": "PRPG26",
+			"timings": [
+				15,
+				0,
+				15,
+				50
+			]
+		},
+		{
+			"title": "BCSE202P",
+			"venue": "PRP126",
+			"timings": [
+				16,
+				0,
+				16,
+				50
+			]
+		},
+		{
+			"title": "BSTS101P",
+			"venue": "PRP111",
+			"timings": [
+				17,
+				0,
+				17,
+				50
+			]
+		}
+	],
+	[],
+	[]
+]

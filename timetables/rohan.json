@@ -1,0 +1,234 @@
+[
+	[
+		{
+			"title": "BMAT202L",
+			"venue": "MB109",
+			"timings": [
+				9,
+				51,
+				11,
+				30
+			]
+		},
+		{
+			"title": "BECE301L",
+			"venue": "TT232",
+			"timings": [
+				11,
+				40,
+				13,
+				20
+			]
+		},
+		{
+			"title": "BSTS102P",
+			"venue": "TT207",
+			"timings": [
+				15,
+				0,
+				15,
+				50
+			]
+		},
+		{
+			"title": "BMAT202P",
+			"venue": "MB211",
+			"timings": [
+				16,
+				0,
+				16,
+				50
+			]
+		},
+		{
+			"title": "BECE204P",
+			"venue": "TT304",
+			"timings": [
+				17,
+				0,
+				17,
+				50
+			]
+		},
+		{
+			"title": "BECE304P",
+			"venue": "TT301",
+			"timings": [
+				18,
+				0,
+				18,
+				50
+			]
+		}
+	],
+	[
+		{
+			"title": "BECE204P",
+			"venue": "TT304",
+			"timings": [
+				14,
+				0,
+				14,
+				50
+			]
+		},
+		{
+			"title": "BECE304P",
+			"venue": "TT301",
+			"timings": [
+				15,
+				0,
+				15,
+				50
+			]
+		},
+		{
+			"title": "BECE207P",
+			"venue": "TT208",
+			"timings": [
+				16,
+				0,
+				16,
+				50
+			]
+		},
+		{
+			"title": "BECE301P",
+			"venue": "TT619",
+			"timings": [
+				17,
+				0,
+				17,
+				50
+			]
+		}
+	],
+	[
+		{
+			"title": "BECE304L",
+			"venue": "TT135",
+			"timings": [
+				8,
+				0,
+				9,
+				40
+			]
+		},
+		{
+			"title": "BECE301P",
+			"venue": "TT619",
+			"timings": [
+				14,
+				0,
+				14,
+				50
+			]
+		},
+		{
+			"title": "BSTS102P",
+			"venue": "TT207",
+			"timings": [
+				16,
+				0,
+				16,
+				50
+			]
+		},
+		{
+			"title": "BMAT202P",
+			"venue": "MB211",
+			"timings": [
+				17,
+				0,
+				17,
+				50
+			]
+		}
+	],
+	[
+		{
+			"title": "BECE204L",
+			"venue": "SJT203",
+			"timings": [
+				11,
+				40,
+				13,
+				20
+			]
+		},
+		{
+			"title": "BMAT202P",
+			"venue": "MB211",
+			"timings": [
+				14,
+				0,
+				14,
+				50
+			]
+		},
+		{
+			"title": "BECE204P",
+			"venue": "TT304",
+			"timings": [
+				15,
+				0,
+				15,
+				50
+			]
+		},
+		{
+			"title": "BECE304P",
+			"venue": "TT301",
+			"timings": [
+				16,
+				0,
+				16,
+				50
+			]
+		},
+		{
+			"title": "BECE207P",
+			"venue": "TT208",
+			"timings": [
+				17,
+				0,
+				17,
+				50
+			]
+		}
+	],
+	[
+		{
+			"title": "BECE207P",
+			"venue": "TT208",
+			"timings": [
+				14,
+				0,
+				14,
+				50
+			]
+		},
+		{
+			"title": "BECE301P",
+			"venue": "TT619",
+			"timings": [
+				15,
+				0,
+				15,
+				50
+			]
+		},
+		{
+			"title": "BSTS102P",
+			"venue": "TT207",
+			"timings": [
+				17,
+				0,
+				17,
+				50
+			]
+		}
+	],
+	[],
+	[]
+]

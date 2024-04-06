@@ -1,0 +1,204 @@
+[
+	[
+		{
+			"title": "BSTS102P",
+			"venue": "MB211",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BMEE207P",
+			"venue": "MB306A",
+			"timings": [
+				11,
+				0,
+				11,
+				50
+			]
+		},
+		{
+			"title": "BMEE302P",
+			"venue": "GDN129",
+			"timings": [
+				12,
+				0,
+				12,
+				50
+			]
+		},
+		{
+			"title": "BMEE302L",
+			"venue": "GDNG26",
+			"timings": [
+				15,
+				51,
+				17,
+				30
+			]
+		},
+		{
+			"title": "BMEE207L",
+			"venue": "ALM 407A",
+			"timings": [
+				17,
+				40,
+				19,
+				20
+			]
+		}
+	],
+	[
+		{
+			"title": "BMEE207P",
+			"venue": "MB306A",
+			"timings": [
+				8,
+				0,
+				8,
+				50
+			]
+		},
+		{
+			"title": "BMEE302P",
+			"venue": "GDN129",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BMEE204P",
+			"venue": "MB218",
+			"timings": [
+				10,
+				0,
+				10,
+				50
+			]
+		},
+		{
+			"title": "BMEE215P",
+			"venue": "MB225",
+			"timings": [
+				11,
+				0,
+				11,
+				50
+			]
+		}
+	],
+	[
+		{
+			"title": "BMEE215P",
+			"venue": "MB225",
+			"timings": [
+				8,
+				0,
+				8,
+				50
+			]
+		},
+		{
+			"title": "BSTS102P",
+			"venue": "MB211",
+			"timings": [
+				10,
+				0,
+				10,
+				50
+			]
+		},
+		{
+			"title": "BMEE204L",
+			"venue": "GDN131",
+			"timings": [
+				14,
+				0,
+				15,
+				40
+			]
+		}
+	],
+	[
+		{
+			"title": "BMEE207P",
+			"venue": "MB306A",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BMEE302P",
+			"venue": "GDN129",
+			"timings": [
+				10,
+				0,
+				10,
+				50
+			]
+		},
+		{
+			"title": "BMEE204P",
+			"venue": "MB218",
+			"timings": [
+				11,
+				0,
+				11,
+				50
+			]
+		},
+		{
+			"title": "BMEE215P",
+			"venue": "MB225",
+			"timings": [
+				12,
+				0,
+				12,
+				50
+			]
+		}
+	],
+	[
+		{
+			"title": "BMEE204P",
+			"venue": "MB218",
+			"timings": [
+				8,
+				0,
+				8,
+				50
+			]
+		},
+		{
+			"title": "BMEE215P",
+			"venue": "MB225",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BSTS102P",
+			"venue": "MB211",
+			"timings": [
+				11,
+				0,
+				11,
+				50
+			]
+		}
+	],
+	[],
+	[]
+]

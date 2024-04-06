@@ -1,0 +1,234 @@
+[
+	[
+		{
+			"title": "BITE307P",
+			"venue": "SJT202",
+			"timings": [
+				8,
+				0,
+				8,
+				50
+			]
+		},
+		{
+			"title": "BSTS102P",
+			"venue": "SJTG01",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BITE304P",
+			"venue": "SJT211",
+			"timings": [
+				10,
+				0,
+				10,
+				50
+			]
+		},
+		{
+			"title": "BMAT202P",
+			"venue": "SJTG02",
+			"timings": [
+				11,
+				0,
+				11,
+				50
+			]
+		},
+		{
+			"title": "BITE302P",
+			"venue": "SJT802",
+			"timings": [
+				12,
+				0,
+				12,
+				50
+			]
+		}
+	],
+	[
+		{
+			"title": "BMAT202P",
+			"venue": "SJTG02",
+			"timings": [
+				8,
+				0,
+				8,
+				50
+			]
+		},
+		{
+			"title": "BITE302P",
+			"venue": "SJT802",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BITE301P",
+			"venue": "SJT205",
+			"timings": [
+				11,
+				0,
+				11,
+				50
+			]
+		},
+		{
+			"title": "BITE304L",
+			"venue": "SJTG20",
+			"timings": [
+				15,
+				51,
+				17,
+				30
+			]
+		},
+		{
+			"title": "BITE307L",
+			"venue": "SJT121",
+			"timings": [
+				17,
+				40,
+				19,
+				20
+			]
+		}
+	],
+	[
+		{
+			"title": "BITE301P",
+			"venue": "SJT205",
+			"timings": [
+				8,
+				0,
+				8,
+				50
+			]
+		},
+		{
+			"title": "BITE307P",
+			"venue": "SJT202",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BSTS102P",
+			"venue": "SJTG01",
+			"timings": [
+				10,
+				0,
+				10,
+				50
+			]
+		},
+		{
+			"title": "BITE302L",
+			"venue": "SJTG17",
+			"timings": [
+				14,
+				0,
+				15,
+				40
+			]
+		},
+		{
+			"title": "BMAT202L",
+			"venue": "SJT620",
+			"timings": [
+				17,
+				40,
+				19,
+				20
+			]
+		}
+	],
+	[
+		{
+			"title": "BITE304P",
+			"venue": "SJT211",
+			"timings": [
+				8,
+				0,
+				8,
+				50
+			]
+		},
+		{
+			"title": "BMAT202P",
+			"venue": "SJTG02",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BITE302P",
+			"venue": "SJT802",
+			"timings": [
+				10,
+				0,
+				10,
+				50
+			]
+		}
+	],
+	[
+		{
+			"title": "BITE301P",
+			"venue": "SJT205",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BITE307P",
+			"venue": "SJT202",
+			"timings": [
+				10,
+				0,
+				10,
+				50
+			]
+		},
+		{
+			"title": "BSTS102P",
+			"venue": "SJTG01",
+			"timings": [
+				11,
+				0,
+				11,
+				50
+			]
+		},
+		{
+			"title": "BITE304P",
+			"venue": "SJT211",
+			"timings": [
+				12,
+				0,
+				12,
+				50
+			]
+		}
+	],
+	[],
+	[]
+]

@@ -1,0 +1,224 @@
+[
+	[
+		{
+			"title": "BMGT101P",
+			"venue": "MB218",
+			"timings": [
+				8,
+				0,
+				8,
+				50
+			]
+		},
+		{
+			"title": "BSTS102P",
+			"venue": "TT207",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BECE204P",
+			"venue": "TT416",
+			"timings": [
+				11,
+				0,
+				11,
+				50
+			]
+		},
+		{
+			"title": "BECE304P",
+			"venue": "TT208",
+			"timings": [
+				12,
+				0,
+				12,
+				50
+			]
+		}
+	],
+	[
+		{
+			"title": "BECE204P",
+			"venue": "TT416",
+			"timings": [
+				8,
+				0,
+				8,
+				50
+			]
+		},
+		{
+			"title": "BECE304P",
+			"venue": "TT208",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BECE207P",
+			"venue": "TT208",
+			"timings": [
+				10,
+				0,
+				10,
+				50
+			]
+		},
+		{
+			"title": "BECE301P",
+			"venue": "TT304",
+			"timings": [
+				11,
+				0,
+				11,
+				50
+			]
+		},
+		{
+			"title": "BECE204L",
+			"venue": "TT729",
+			"timings": [
+				15,
+				51,
+				17,
+				30
+			]
+		}
+	],
+	[
+		{
+			"title": "BECE301P",
+			"venue": "TT304",
+			"timings": [
+				8,
+				0,
+				8,
+				50
+			]
+		},
+		{
+			"title": "BMGT101P",
+			"venue": "MB218",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BSTS102P",
+			"venue": "TT207",
+			"timings": [
+				10,
+				0,
+				10,
+				50
+			]
+		},
+		{
+			"title": "BECE301L",
+			"venue": "TT231",
+			"timings": [
+				15,
+				51,
+				17,
+				30
+			]
+		}
+	],
+	[
+		{
+			"title": "BECE204P",
+			"venue": "TT416",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BECE304P",
+			"venue": "TT208",
+			"timings": [
+				10,
+				0,
+				10,
+				50
+			]
+		},
+		{
+			"title": "BECE207P",
+			"venue": "TT208",
+			"timings": [
+				11,
+				0,
+				11,
+				50
+			]
+		}
+	],
+	[
+		{
+			"title": "BECE207P",
+			"venue": "TT208",
+			"timings": [
+				8,
+				0,
+				8,
+				50
+			]
+		},
+		{
+			"title": "BECE301P",
+			"venue": "TT304",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BMGT101P",
+			"venue": "MB218",
+			"timings": [
+				10,
+				0,
+				10,
+				50
+			]
+		},
+		{
+			"title": "BSTS102P",
+			"venue": "TT207",
+			"timings": [
+				11,
+				0,
+				11,
+				50
+			]
+		},
+		{
+			"title": "BECE304L",
+			"venue": "TT135",
+			"timings": [
+				15,
+				51,
+				17,
+				30
+			]
+		}
+	],
+	[],
+	[]
+]

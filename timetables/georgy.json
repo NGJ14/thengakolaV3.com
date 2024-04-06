@@ -1,0 +1,244 @@
+[
+	[
+		{
+			"title": "BSTS102P",
+			"venue": "CDMM402",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BMAT202P",
+			"venue": "MB211",
+			"timings": [
+				10,
+				0,
+				10,
+				50
+			]
+		},
+		{
+			"title": "BMEE207P",
+			"venue": "MB227",
+			"timings": [
+				11,
+				0,
+				11,
+				50
+			]
+		},
+		{
+			"title": "BMEE302P",
+			"venue": "MB225",
+			"timings": [
+				12,
+				0,
+				12,
+				50
+			]
+		}
+	],
+	[
+		{
+			"title": "BMEE207P",
+			"venue": "MB227",
+			"timings": [
+				8,
+				0,
+				8,
+				50
+			]
+		},
+		{
+			"title": "BMEE302P",
+			"venue": "MB225",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BMEE204P",
+			"venue": "MB218",
+			"timings": [
+				10,
+				0,
+				10,
+				50
+			]
+		},
+		{
+			"title": "BMEE215P",
+			"venue": "MB227",
+			"timings": [
+				11,
+				0,
+				11,
+				50
+			]
+		}
+	],
+	[
+		{
+			"title": "BMEE215P",
+			"venue": "MB227",
+			"timings": [
+				8,
+				0,
+				8,
+				50
+			]
+		},
+		{
+			"title": "BSTS102P",
+			"venue": "CDMM402",
+			"timings": [
+				10,
+				0,
+				10,
+				50
+			]
+		},
+		{
+			"title": "BMAT202L",
+			"venue": "MB109",
+			"timings": [
+				14,
+				0,
+				15,
+				40
+			]
+		}
+	],
+	[
+		{
+			"title": "BMAT202P",
+			"venue": "MB211",
+			"timings": [
+				8,
+				0,
+				8,
+				50
+			]
+		},
+		{
+			"title": "BMEE207P",
+			"venue": "MB227",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BMEE302P",
+			"venue": "MB225",
+			"timings": [
+				10,
+				0,
+				10,
+				50
+			]
+		},
+		{
+			"title": "BMEE204P",
+			"venue": "MB218",
+			"timings": [
+				11,
+				0,
+				11,
+				50
+			]
+		},
+		{
+			"title": "BMEE215P",
+			"venue": "MB227",
+			"timings": [
+				12,
+				0,
+				12,
+				50
+			]
+		},
+		{
+			"title": "BMEE207L",
+			"venue": "ALM 407A",
+			"timings": [
+				14,
+				0,
+				15,
+				40
+			]
+		},
+		{
+			"title": "BMEE204L",
+			"venue": "GDN131",
+			"timings": [
+				15,
+				51,
+				17,
+				30
+			]
+		}
+	],
+	[
+		{
+			"title": "BMEE204P",
+			"venue": "MB218",
+			"timings": [
+				8,
+				0,
+				8,
+				50
+			]
+		},
+		{
+			"title": "BMEE215P",
+			"venue": "MB227",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BSTS102P",
+			"venue": "CDMM402",
+			"timings": [
+				11,
+				0,
+				11,
+				50
+			]
+		},
+		{
+			"title": "BMAT202P",
+			"venue": "MB211",
+			"timings": [
+				12,
+				0,
+				12,
+				50
+			]
+		},
+		{
+			"title": "BMEE302L",
+			"venue": "GDNG26",
+			"timings": [
+				14,
+				0,
+				15,
+				40
+			]
+		}
+	],
+	[],
+	[]
+]

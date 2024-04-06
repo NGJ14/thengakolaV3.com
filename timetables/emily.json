@@ -1,0 +1,254 @@
+[
+	[
+		{
+			"title": "BCSE205P",
+			"venue": "PRP214",
+			"timings": [
+				10,
+				0,
+				10,
+				50
+			]
+		},
+		{
+			"title": "BCSE304P",
+			"venue": "PRP318",
+			"timings": [
+				11,
+				0,
+				11,
+				50
+			]
+		},
+		{
+			"title": "BMAT202P",
+			"venue": "PRP323",
+			"timings": [
+				12,
+				0,
+				12,
+				50
+			]
+		}
+	],
+	[
+		{
+			"title": "BCSE304P",
+			"venue": "PRP318",
+			"timings": [
+				8,
+				0,
+				8,
+				50
+			]
+		},
+		{
+			"title": "BMAT202P",
+			"venue": "PRP323",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BSTS102P",
+			"venue": "SJT303",
+			"timings": [
+				10,
+				0,
+				10,
+				50
+			]
+		},
+		{
+			"title": "BECE204P",
+			"venue": "PRP224",
+			"timings": [
+				11,
+				0,
+				11,
+				50
+			]
+		},
+		{
+			"title": "BCSE203P",
+			"venue": "PRP320",
+			"timings": [
+				12,
+				0,
+				12,
+				50
+			]
+		},
+		{
+			"title": "BCSE301P",
+			"venue": "SJT602A",
+			"timings": [
+				17,
+				0,
+				17,
+				50
+			]
+		}
+	],
+	[
+		{
+			"title": "BECE204P",
+			"venue": "PRP224",
+			"timings": [
+				8,
+				0,
+				8,
+				50
+			]
+		},
+		{
+			"title": "BCSE301P",
+			"venue": "SJT602A",
+			"timings": [
+				14,
+				0,
+				14,
+				50
+			]
+		},
+		{
+			"title": "BMAT202L",
+			"venue": "SJT319",
+			"timings": [
+				17,
+				40,
+				19,
+				20
+			]
+		}
+	],
+	[
+		{
+			"title": "BCSE205P",
+			"venue": "PRP214",
+			"timings": [
+				8,
+				0,
+				8,
+				50
+			]
+		},
+		{
+			"title": "BCSE304P",
+			"venue": "PRP318",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BMAT202P",
+			"venue": "PRP323",
+			"timings": [
+				10,
+				0,
+				10,
+				50
+			]
+		},
+		{
+			"title": "BSTS102P",
+			"venue": "SJT303",
+			"timings": [
+				11,
+				0,
+				11,
+				50
+			]
+		},
+		{
+			"title": "BCSE203L",
+			"venue": "SJT317",
+			"timings": [
+				14,
+				0,
+				15,
+				40
+			]
+		},
+		{
+			"title": "BECE204L",
+			"venue": "SJT515",
+			"timings": [
+				17,
+				40,
+				19,
+				20
+			]
+		}
+	],
+	[
+		{
+			"title": "BSTS102P",
+			"venue": "SJT303",
+			"timings": [
+				8,
+				0,
+				8,
+				50
+			]
+		},
+		{
+			"title": "BECE204P",
+			"venue": "PRP224",
+			"timings": [
+				9,
+				0,
+				9,
+				50
+			]
+		},
+		{
+			"title": "BCSE301L",
+			"venue": "SJT419",
+			"timings": [
+				9,
+				51,
+				11,
+				30
+			]
+		},
+		{
+			"title": "BCSE205P",
+			"venue": "PRP214",
+			"timings": [
+				12,
+				0,
+				12,
+				50
+			]
+		},
+		{
+			"title": "BCSE301P",
+			"venue": "SJT602A",
+			"timings": [
+				15,
+				0,
+				15,
+				50
+			]
+		},
+		{
+			"title": "BCSE203L",
+			"venue": "SJT317",
+			"timings": [
+				15,
+				51,
+				17,
+				30
+			]
+		}
+	],
+	[],
+	[]
+]
