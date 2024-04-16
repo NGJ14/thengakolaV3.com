@@ -5,7 +5,7 @@ if ("serviceWorker" in navigator) {
     // Try to register the service worker.
     try {
       // Capture the registration for later use, if needed
-      let reg = await navigator.serviceWorker.register("/sw.js");
+      let reg = await navigator.serviceWorker.register("./sw.js");
       console.log("Service worker registered! 😎", reg);
     } catch (err) {
       console.log("😥 Service worker registration failed: ", err);
