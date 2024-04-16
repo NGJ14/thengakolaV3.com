@@ -14,7 +14,6 @@ if ("serviceWorker" in navigator) {
 }
 
 var all = document.getElementById("all");
-var profilePage = document.getElementById("profilePage");
 var infoBoxes = document.getElementsByClassName("infoBox");
 let cardSections1 = [...document.getElementsByClassName("cardLeft")];
 let cardSections2 = [...document.getElementsByClassName("cardRight2")];
@@ -25,7 +24,7 @@ for (let i = 0; i < cardSections1.length; i++) {
     cardSections.push(cardSections2[i]);
   }
 }
-var avatars = document.getElementsByClassName("avatar");
+var a_tags = document.getElementsByTagName("a");
 var popup = document.getElementById("PUR");
 var closeButton = document.getElementById("closePop");
 var cards = document.getElementsByClassName("card");
@@ -85,7 +84,7 @@ function closePopup() {
   Array.from(cardSections).forEach((el) => {
     el.style.pointerEvents = "auto";
   });
-  Array.from(avatars).forEach((el) => {
+  Array.from(a_tags).forEach((el) => {
     el.style.pointerEvents = "auto";
   });
 
@@ -104,7 +103,7 @@ function openPopup(e, name) {
   Array.from(cardSections).forEach((el) => {
     el.style.pointerEvents = "none";
   });
-  Array.from(avatars).forEach((el) => {
+  Array.from(a_tags).forEach((el) => {
     el.style.pointerEvents = "none";
   });
   e.stopImmediatePropagation();
@@ -129,37 +128,6 @@ function openPopup(e, name) {
       `</div>`;
     ball_row.innerHTML +=
       `<div class="statusBall2 ` + balls[name][i] + `"></div>`;
-  }
-}
-
-function goHome() {
-  profilePage.style.display = "none";
-  all.style.display = "block";
-}
-
-function openProfilePage(name) {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-  let img_src = "./images/avatars/" + name + ".webp";
-  all.style.display = "none";
-  profilePage.style.display = "block";
-  profilePage.getElementsByTagName("img")[0].setAttribute("src", img_src);
-  profilePage.getElementsByClassName("nameTitle")[0].innerHTML =
-    nick_names[name];
-  var dayTables = profilePage.getElementsByClassName("dayBox");
-  for (let i = 0; i < 5; i++) {
-    let dayTable = dayTables[i];
-    dayTable.innerHTML = dayTable.firstElementChild.outerHTML;
-    for (let period of periods_today[name][i]) {
-      dayTable.innerHTML +=
-        `<div class="dayCell"><div class="dayData">` +
-        period["venue"] +
-        `</div><div class="dayData">` +
-        period["title"] +
-        `</div><div class="dayData">` +
-        createTimeString(period["timings"]) +
-        `</div></div>`;
-    }
   }
 }
 
