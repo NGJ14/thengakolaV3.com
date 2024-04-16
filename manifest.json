@@ -1,6 +1,6 @@
 {
   "id": "/",
-  "Scope": "/",
+  "scope": "https://ngj14.github.io/thengakolaV3.com/",
   "background_color": "#ffffff",
   "theme_color": "#000000",
   "description": "thengakola's 3rd edition of timetable webApp",
