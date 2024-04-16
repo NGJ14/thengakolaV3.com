@@ -24,6 +24,7 @@ const precacheResources = [
   "./images/backgrounds/bg4.png",
   "./images/backgrounds/bg5.png",
   "./images/logo/logo.png",
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css",
 ];
 
 // When the service worker is installing, open the cache and add the precache resources to it
