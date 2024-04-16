@@ -1,12 +1,14 @@
 // Choose a cache name
-const cacheName = "cache-v1";
+const cacheName = "cache-v2";
+
 // List the files to precache
 const precacheResources = [
-  "./",
-  "./manifest.json",
   "./index.html",
   "./stylem.css",
   "./script.js",
+  "./profile.html",
+  "./profileStyle.css",
+  "./profile.js",
   "./timetables/arsha.json",
   "./timetables/emily.json",
   "./timetables/georgy.json",
@@ -14,22 +16,13 @@ const precacheResources = [
   "./timetables/naveen.json",
   "./timetables/neha.json",
   "./timetables/rohan.json",
-  "./images/avatars/arsha.webp",
-  "./images/avatars/emily.webp",
-  "./images/avatars/georgy.webp",
-  "./images/avatars/justus.webp",
-  "./images/avatars/naveen.webp",
-  "./images/avatars/neha.webp",
-  "./images/avatars/rohan.webp",
   "./images/backgrounds/bg4.png",
   "./images/backgrounds/bg5.png",
   "./images/logo/logo.png",
   "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css",
-  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.woff2",
-  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/webfonts/fa-solid-900.ttf",
 ];
 
-// When the service worker is installing, open the cache and add the precache resources to it
+// When sw is installing, open the cache and add the precache resources to it
 self.addEventListener("install", (event) => {
   console.log("Service worker install event!");
   event.waitUntil(
@@ -37,19 +30,45 @@ self.addEventListener("install", (event) => {
   );
 });
 
+// When activating sw, delete all caches except current
 self.addEventListener("activate", (event) => {
   console.log("Service worker activate event!");
+  event.waitUntil(
+    (async function () {
+      const cacheNames = await caches.keys();
+      await Promise.all(
+        cacheNames
+          .filter((tmpCacheName) => cacheName != tmpCacheName)
+          .map((tmpCacheName) => caches.delete(tmpCacheName))
+      );
+    })()
+  );
 });
 
-// When there's an incoming fetch request, try and respond with a precached resource, otherwise fall back to the network
+// TODO: switch to https://jakearchibald.com/2014/offline-cookbook/#cache-then-network
+// Get from cache if exists but also get from network and replace cache item
 self.addEventListener("fetch", (event) => {
-  console.log("Fetch intercepted for:", event.request.url);
+  let url = new URL(event.request.url);
+  url.searchParams.delete("name");
+
+  console.log("Fetch intercepted for:", url.toString());
+
   event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      if (cachedResponse) {
-        return cachedResponse;
-      }
-      return fetch(event.request);
-    })
+    (async function () {
+      const cache = await caches.open(cacheName);
+      const cachedResponse = await cache.match(url);
+      const networkResponsePromise = fetch(url);
+      event.waitUntil(
+        (async function () {
+          try {
+            const networkResponse = await networkResponsePromise;
+            await cache.put(url, networkResponse.clone());
+          } catch (e) {
+            console.log("offline, no fetch");
+          }
+        })()
+      );
+      return cachedResponse || networkResponse;
+    })()
   );
 });
