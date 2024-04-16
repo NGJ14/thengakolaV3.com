@@ -2,6 +2,7 @@
 const cacheName = "cache-v1";
 // List the files to precache
 const precacheResources = [
+  "./",
   "./manifest.json",
   "./index.html",
   "./stylem.css",
