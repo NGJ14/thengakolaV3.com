@@ -192,9 +192,9 @@ function writeData(index, name, periodsToday) {
   let img_src = "./images/avatars/" + name + ".webp";
   let img = card.getElementsByTagName("img")[0];
   img.setAttribute("src", img_src);
-  img.onclick = function () {
-    openProfilePage(name);
-  };
+  card
+    .getElementsByTagName("a")[0]
+    .setAttribute("href", "./profile.html?name=" + name);
 
   box.onclick = function (e) {
     openPopup(e, name);
