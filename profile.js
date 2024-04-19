@@ -12,13 +12,15 @@ const nick_names = {
   emily: "നെല്ലിക്ക",
 };
 
-// var periods_today = [];
+function syncColors() {
+  for (const name of ["primary", "tertiary", "secondary"]) {
+    let color = localStorage.getItem(name);
+    document.documentElement.style.setProperty("--" + name, color);
+  }
+}
+
 fetch("./timetables/" + name + ".json")
   .then((response) => response.json())
-  // .then((json) => {
-  //   periods_today = json;
-  //   return json;
-  // })
   .then((json) => writeData(json));
 
 function writeData(periods) {

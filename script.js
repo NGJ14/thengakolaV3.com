@@ -78,6 +78,51 @@ var balls = {
   emily: [],
 };
 
+var colors = { primary: "", secondary: "", tertiary: "" };
+
+function setColor(colorBall) {
+  if (arguments.length == 0) {
+    // if (localStorage.)
+    for (const name of ["primary", "tertiary", "secondary"]) {
+      let color = localStorage.getItem(name);
+      if (!color) {
+        return;
+      }
+      document.documentElement.style.setProperty("--" + name, color);
+
+      let i = localStorage.getItem("currentTheme");
+      let colorBalls =
+        document.getElementsByClassName("colorCapsule")[0].children;
+
+      for (const [i, tmpColorBall] of Object.entries(colorBalls)) {
+        tmpColorBall.classList.remove("currentTheme");
+      }
+
+      let currentBall = colorBalls[i];
+
+      currentBall.classList.add("currentTheme");
+    }
+  } else {
+    let colorDivs = colorBall.getElementsByTagName("div");
+
+    for (const [i, name] of ["primary", "tertiary", "secondary"].entries()) {
+      colors[name] = window.getComputedStyle(colorDivs[i])["background-color"];
+      document.documentElement.style.setProperty("--" + name, colors[name]);
+      localStorage.setItem(name, colors[name]);
+    }
+
+    let colorBalls = colorBall.parentElement.children;
+    for (const [i, tmpColorBall] of Object.entries(colorBalls)) {
+      if (colorBall == tmpColorBall) {
+        tmpColorBall.classList.add("currentTheme");
+        localStorage.setItem("currentTheme", i);
+      } else {
+        tmpColorBall.classList.remove("currentTheme");
+      }
+    }
+  }
+}
+
 function closePopup() {
   all.classList.remove("blurr");
   window.onscroll = function () {};
@@ -239,5 +284,3 @@ function writeData(index, name, periodsToday) {
 for (const [index, name] of ordered_names.entries()) {
   setData(index, name);
 }
-
-
