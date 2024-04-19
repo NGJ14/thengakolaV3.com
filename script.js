@@ -239,3 +239,5 @@ function writeData(index, name, periodsToday) {
 for (const [index, name] of ordered_names.entries()) {
   setData(index, name);
 }
+
+

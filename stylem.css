@@ -1,8 +1,10 @@
 :root {
-  --primary: lightsalmon;
-  --secondary: rgb(255, 208, 190);
-  --tertiary: rgba(255, 160, 122, 0.57);
+  --primary: #25a18e;
+  --secondary: #9fffcb;
+  --tertiary: #7ae582;
+
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -38,6 +40,7 @@ a {
   border-bottom-left-radius: 35px;
   border-bottom-right-radius: 35px;
   border: 6px solid black;
+
   border-top: 0px solid #000;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   font-size: 2.3rem;
@@ -150,7 +153,7 @@ a {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-shadow: none;
   font-weight: 900;
-  background: rgba(255, 208, 190, 0.65);
+  background: var(--tertiary);
   padding: 5px 25px;
   border-radius: 20px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
@@ -292,4 +295,68 @@ a {
   font-size: 2rem;
   font-style: italic;
   text-shadow: 4px 3px 0px var(--secondary), 9px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.themeBar{
+  height: 9.2vh;
+  width: 100%;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border: 6px solid black;
+  border-bottom: 0px solid #000;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 2.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 900;
+  background: var(--tertiary);
+  color: #000;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+
+.themeCapsule{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 500px;
+  height: 2.7rem;
+  width: 2.7rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-left: 1rem;
+  background: var(--secondary);
+}
+
+.themeCapsule  i{
+  font-size: 1.8rem;
+  color: black;
+}
+.colorCapsule{
+  display: flex;
+  margin-right: 1rem;
+}
+.colorCapsule div{
+  height: 2.7rem;
+  width: 2.7rem;
+  /* background: #000; */
+  margin: 0px 6px;
+  /* border-radius: 50%; */
+}
+.colorCapsule div div{
+  height: 1.35rem;
+  width: 2.7rem;
+}
+.cTop{
+  border-top-right-radius: 500px; 
+  border-top-left-radius: 500px;
+  background: var(--primary);
+  
+}
+.cDown{
+  border-bottom-right-radius: 500px; 
+  border-bottom-left-radius: 500px;
+  background: var(--secondary);
 }
