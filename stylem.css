@@ -1,8 +1,7 @@
 :root {
   --primary: #25a18e;
-  --secondary: #9fffcb;
-  --tertiary: #7ae582;
-
+  --secondary: #88ebb4;
+  --tertiary: #7ae581a3;
 }
 
 * {
@@ -153,7 +152,7 @@ a {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-shadow: none;
   font-weight: 900;
-  background: var(--tertiary);
+  background: var(--secondary);
   padding: 5px 25px;
   border-radius: 20px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
@@ -255,7 +254,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--secondary);
+  background: var(--tertiary);
   border-radius: 150px;
   width: 9.5vw;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -297,7 +296,7 @@ a {
   text-shadow: 4px 3px 0px var(--secondary), 9px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
-.themeBar{
+.themeBar {
   height: 9.2vh;
   width: 100%;
   border-top-left-radius: 35px;
@@ -317,8 +316,7 @@ a {
   z-index: 100;
 }
 
-
-.themeCapsule{
+.themeCapsule {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -330,33 +328,94 @@ a {
   background: var(--secondary);
 }
 
-.themeCapsule  i{
+.themeCapsule i {
   font-size: 1.8rem;
   color: black;
 }
-.colorCapsule{
+.colorCapsule {
   display: flex;
   margin-right: 1rem;
 }
-.colorCapsule div{
+.colorCapsule div {
   height: 2.7rem;
   width: 2.7rem;
   /* background: #000; */
   margin: 0px 6px;
   /* border-radius: 50%; */
 }
-.colorCapsule div div{
+.colorCapsule div div {
   height: 1.35rem;
   width: 2.7rem;
 }
-.cTop{
-  border-top-right-radius: 500px; 
+.cTop {
+  border-top-right-radius: 500px;
   border-top-left-radius: 500px;
-  background: var(--primary);
-  
 }
-.cDown{
-  border-bottom-right-radius: 500px; 
+.cDown {
+  border-bottom-right-radius: 500px;
   border-bottom-left-radius: 500px;
-  background: var(--secondary);
+}
+.color1 {
+  .cTop {
+    background: #25a18e;
+  }
+  .cMid {
+    display: none;
+    background: #7ae581a3;
+  }
+  .cDown {
+    background: #88ebb4;
+  }
+}
+.color2 {
+  .cTop {
+    background: #ff9f1c;
+  }
+  .cMid {
+    display: none;
+    background: #ffbe69db;
+  }
+  .cDown {
+    background: #ffe8d6;
+  }
+}
+.color3 {
+  .cTop {
+    background: #4d4d96;
+  }
+  .cMid {
+    display: none;
+    background: #9b9ebf;
+  }
+  .cDown {
+    background: #ececec;
+  }
+}
+.color4 {
+  .cTop {
+    background: #e73a49;
+  }
+  .cMid {
+    display: none;
+    background: #f0a2c499;
+  }
+  .cDown {
+    background: #e58aa7;
+  }
+}
+.color5 {
+  .cTop {
+    background: #a1bb10;
+  }
+  .cMid {
+    display: none;
+    background: #cded6ea3;
+  }
+  .cDown {
+    background: #d6f060;
+  }
+}
+.currentTheme {
+  border: 3px solid black;
+  border-radius: 500px;
 }
