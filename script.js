@@ -78,8 +78,6 @@ var balls = {
   emily: [],
 };
 
-var colors = { primary: "", secondary: "", tertiary: "" };
-
 function setColor(colorBall) {
   if (arguments.length == 0) {
     // if (localStorage.)
@@ -94,40 +92,33 @@ function setColor(colorBall) {
       let colorBalls =
         document.getElementsByClassName("colorCapsule")[0].children;
 
-      for (const [i, tmpColorBall] of Object.entries(colorBalls)) {
-        
-        tmpColorBall.classList.remove("currentTheme");
-        
+      for (const tmpColorBall of colorBalls) {
+        tmpColorBall.children[0].classList.remove("cTopBorder");
+        tmpColorBall.children[2].classList.remove("cDownBorder");
       }
 
       let currentBall = colorBalls[i];
-
-      currentBall.classList.add("currentTheme");
+      currentBall.children[0].classList.add("cTopBorder");
+      currentBall.children[2].classList.add("cDownBorder");
     }
   } else {
     let colorDivs = colorBall.getElementsByTagName("div");
 
     for (const [i, name] of ["primary", "tertiary", "secondary"].entries()) {
-      colors[name] = window.getComputedStyle(colorDivs[i])["background-color"];
-      document.documentElement.style.setProperty("--" + name, colors[name]);
-      localStorage.setItem(name, colors[name]);
+      let color = window.getComputedStyle(colorDivs[i])["background-color"];
+      document.documentElement.style.setProperty("--" + name, color);
+      localStorage.setItem(name, color);
     }
 
     let colorBalls = colorBall.parentElement.children;
     for (const [i, tmpColorBall] of Object.entries(colorBalls)) {
       if (colorBall == tmpColorBall) {
-        tmpColorBall.classList.add("currentTheme");
-        document
-          .querySelector(".currentTheme .cTop")
-          .classList.add("cTopBorder");
-          document
-            .querySelector(".currentTheme .cDown")
-            .classList.add("cDownBorder");
+        tmpColorBall.children[0].classList.add("cTopBorder");
+        tmpColorBall.children[2].classList.add("cDownBorder");
         localStorage.setItem("currentTheme", i);
       } else {
-        
-        tmpColorBall.classList.remove("currentTheme");
-        
+        tmpColorBall.children[0].classList.remove("cTopBorder");
+        tmpColorBall.children[2].classList.remove("cDownBorder");
       }
     }
   }
