@@ -78,48 +78,86 @@ var balls = {
   emily: [],
 };
 
-function setColor(colorBall) {
+colors = {
+  light: [
+    { primary: "#25a18e", secondary: "#88ebb4", tertiary: "#88ebb4" },
+    { primary: "#ff9f1c", secondary: "#ffe8d6", tertiary: "#ffbe69db" },
+    { primary: "#4d4d96", secondary: "#ececec", tertiary: "#9b9ebf" },
+    { primary: "#e73a49", secondary: "#e58aa7", tertiary: "#f0a2c499" },
+    { primary: "#a1bb10", secondary: "#d6f060", tertiary: "#cded6ea3" },
+  ],
+  dark: [
+    { primary: "#313131", secondary: "#000000", tertiary: "#434343b8" },
+    { primary: "#801336", secondary: "#230e23", tertiary: "#5d101b" },
+    { primary: "#9a3800", secondary: "#490915", tertiary: "#191919" },
+    { primary: "#460033", secondary: "#160434", tertiary: "#2d0b3cac" },
+    { primary: "#092635", secondary: "#245745", tertiary: "#1b4242" },
+  ],
+};
+
+function switchLightDark(toggleButton) {
+  let iconClassList = toggleButton.children[0].classList;
+  let capsule = document.getElementById("themeCapsule");
+
+  // TODO: switch freename font color?
+  if (iconClassList.contains("fa-moon")) {
+    localStorage.setItem("mode", "dark");
+    iconClassList.remove("fa-moon");
+    iconClassList.add("fa-sun");
+    capsule.style.background = "white";
+    capsule.children[0].style.color = "black";
+  } else {
+    localStorage.setItem("mode", "light");
+    iconClassList.remove("fa-sun");
+    iconClassList.add("fa-moon");
+    capsule.style.background = "black";
+    capsule.children[0].style.color = "white";
+  }
+  setColor();
+}
+
+function setColor(ballIdx) {
+  var idx = 0;
+
+  // set initial values
+  if (localStorage.getItem("currentTheme") === null) {
+    localStorage.setItem("mode", "light");
+    localStorage.setItem("currentTheme", idx);
+  }
+
+  var color_list = colors[localStorage.getItem("mode")];
+
+  var colorBalls = document.getElementById("colorCapsule").children;
   if (arguments.length == 0) {
-    // if (localStorage.)
-    for (const name of ["primary", "tertiary", "secondary"]) {
-      let color = localStorage.getItem(name);
-      if (!color) {
-        return;
-      }
-      document.documentElement.style.setProperty("--" + name, color);
-
-      let i = localStorage.getItem("currentTheme");
-      let colorBalls =
-        document.getElementsByClassName("colorCapsule")[0].children;
-
-      for (const tmpColorBall of colorBalls) {
-        tmpColorBall.children[0].classList.remove("cTopBorder");
-        tmpColorBall.children[2].classList.remove("cDownBorder");
-      }
-
-      let currentBall = colorBalls[i];
-      currentBall.children[0].classList.add("cTopBorder");
-      currentBall.children[2].classList.add("cDownBorder");
+    idx = localStorage.getItem("currentTheme");
+    for (const [i, ball] of Object.entries(colorBalls)) {
+      ball.children[0].style.background = color_list[i].primary;
+      ball.children[1].style.background = color_list[i].secondary;
     }
   } else {
-    let colorDivs = colorBall.getElementsByTagName("div");
+    localStorage.setItem("currentTheme", ballIdx);
+    idx = ballIdx;
+  }
 
-    for (const [i, name] of ["primary", "tertiary", "secondary"].entries()) {
-      let color = window.getComputedStyle(colorDivs[i])["background-color"];
-      document.documentElement.style.setProperty("--" + name, color);
-      localStorage.setItem(name, color);
-    }
+  let color_set = color_list[idx];
+  for (const name of ["primary", "tertiary", "secondary"]) {
+    document.documentElement.style.setProperty("--" + name, color_set[name]);
+  }
 
-    let colorBalls = colorBall.parentElement.children;
-    for (const [i, tmpColorBall] of Object.entries(colorBalls)) {
-      if (colorBall == tmpColorBall) {
-        tmpColorBall.children[0].classList.add("cTopBorder");
-        tmpColorBall.children[2].classList.add("cDownBorder");
-        localStorage.setItem("currentTheme", i);
-      } else {
-        tmpColorBall.children[0].classList.remove("cTopBorder");
-        tmpColorBall.children[2].classList.remove("cDownBorder");
-      }
+  // TODO: switch border color when in dark mode
+  for (const [i, ball] of Object.entries(colorBalls)) {
+    if (idx != i) {
+      ball.children[0].classList.remove("cTopBorder");
+      ball.children[1].classList.remove("cDownBorder");
+      // ball.children[0].classList.remove("dark");
+      // ball.children[1].classList.remove("dark");
+    } else {
+      ball.children[0].classList.add("cTopBorder");
+      ball.children[1].classList.add("cDownBorder");
+      // if (localStorage.getItem("mode") == "dark") {
+      //   ball.children[0].classList.add("dark");
+      //   ball.children[1].classList.add("dark");
+      // }
     }
   }
 }
