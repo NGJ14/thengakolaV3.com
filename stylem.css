@@ -1,13 +1,14 @@
 :root {
-  --primary: #25a18e;
-  --secondary: #88ebb4;
-  --tertiary: #7ae581a3;
+  --primary: #c6c6c6;
+  --secondary: #ffffff;
+  --tertiary: #b9b9b9b8;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
+    box-sizing: border-box;
+    margin: 0;
   padding: 0;
+  color: rgb(0, 0, 0);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-family: "Gill Sans Nova Cond Ultra Bold", "Gill Sans", sans-serif;
   font-family: "Ultra", serif;
@@ -49,7 +50,6 @@ a {
   font-weight: 900;
   position: fixed;
   background: var(--tertiary);
-  color: #000;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   z-index: 100;
