@@ -95,7 +95,9 @@ function setColor(colorBall) {
         document.getElementsByClassName("colorCapsule")[0].children;
 
       for (const [i, tmpColorBall] of Object.entries(colorBalls)) {
+        
         tmpColorBall.classList.remove("currentTheme");
+        
       }
 
       let currentBall = colorBalls[i];
@@ -115,9 +117,17 @@ function setColor(colorBall) {
     for (const [i, tmpColorBall] of Object.entries(colorBalls)) {
       if (colorBall == tmpColorBall) {
         tmpColorBall.classList.add("currentTheme");
+        document
+          .querySelector(".currentTheme .cTop")
+          .classList.add("cTopBorder");
+          document
+            .querySelector(".currentTheme .cDown")
+            .classList.add("cDownBorder");
         localStorage.setItem("currentTheme", i);
       } else {
+        
         tmpColorBall.classList.remove("currentTheme");
+        
       }
     }
   }
