@@ -36,9 +36,25 @@ function syncColors() {
   }
 
   let idx = localStorage.getItem("currentTheme");
-  let color_set = colors[localStorage.getItem("mode")][idx];
+  let mode = localStorage.getItem("mode");
+  let color_set = colors[mode][idx];
   for (const name of ["primary", "tertiary", "secondary"]) {
     document.documentElement.style.setProperty("--" + name, color_set[name]);
+  }
+
+  if (mode == "dark") {
+    document.getElementsByTagName("body")[0].style.color = "white";
+    document.getElementsByClassName("logoBar")[0].style.color =
+      "rgba(255, 255, 255, 0.765)";
+    for (e of document.getElementsByClassName("freeName")) {
+      e.style.color = "rgba(255, 255, 255, 0.765)";
+    }
+  } else {
+    document.getElementsByTagName("body")[0].style.color = "black";
+    document.getElementsByClassName("logoBar")[0].style.color = "black";
+    for (e of document.getElementsByClassName("freeName")) {
+      e.style.color = "black";
+    }
   }
 }
 
