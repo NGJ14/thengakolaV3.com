@@ -153,8 +153,26 @@ function setColor(ballIdx) {
       if (localStorage.getItem("mode") == "dark") {
         ball.children[0].style.borderColor = "white";
         ball.children[1].style.borderColor = "white";
+        document.getElementsByTagName("body")[0].style.color = "white";
+        document.getElementsByClassName("logoBar")[0].style.color = "rgba(255, 255, 255, 0.765)";
+        document.getElementsByClassName("freeName")[0].style.color = "rgba(255, 255, 255, 0.765)";
+        document.getElementsByClassName("freeName")[1].style.color = "rgba(255, 255, 255, 0.765)";
+        document.getElementsByClassName("freeName")[2].style.color = "rgba(255, 255, 255, 0.765)";
+        document.getElementsByClassName("freeName")[3].style.color = "rgba(255, 255, 255, 0.765)";
+        document.getElementsByClassName("freeName")[4].style.color = "rgba(255, 255, 255, 0.765)";
+        document.getElementsByClassName("freeName")[5].style.color = "rgba(255, 255, 255, 0.765)";
+        document.getElementsByClassName("freeName")[6].style.color = "rgba(255, 255, 255, 0.765)";
         themeCapsule.firstElementChild.classList = "fa-solid fa-sun";
       } else {
+        document.getElementsByTagName("body")[0].style.color = "black";
+        document.getElementsByClassName("logoBar")[0].style.color = "black";
+        document.getElementsByClassName("freeName")[0].style.color = "black";
+        document.getElementsByClassName("freeName")[1].style.color = "black";
+        document.getElementsByClassName("freeName")[2].style.color = "black";
+        document.getElementsByClassName("freeName")[3].style.color = "black";
+        document.getElementsByClassName("freeName")[4].style.color = "black";
+        document.getElementsByClassName("freeName")[5].style.color = "black";
+        document.getElementsByClassName("freeName")[6].style.color = "black";
         ball.children[0].style.borderColor = "black";
         ball.children[1].style.borderColor = "black";
         themeCapsule.firstElementChild.classList = "fa-solid fa-moon";
