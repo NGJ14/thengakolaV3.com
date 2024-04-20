@@ -406,11 +406,20 @@ a {
   border-top: 0;
 }
 
-/* .cTopBorder,
+.cTopBorder,
 .dark {
   border-color: white;
 }
 .cDownBorder,
 .dark {
   border-color: white;
-} */
+}
+
+.cTopBorder,
+.light {
+  border-color: black;
+}
+.cDownBorder,
+.light {
+  border-color: black;
+}

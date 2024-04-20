@@ -12,10 +12,33 @@ const nick_names = {
   emily: "നെല്ലിക്ക",
 };
 
+colors = {
+  light: [
+    { primary: "#25a18e", secondary: "#88ebb4", tertiary: "#88ebb4" },
+    { primary: "#ff9f1c", secondary: "#ffe8d6", tertiary: "#ffbe69db" },
+    { primary: "#4d4d96", secondary: "#ececec", tertiary: "#9b9ebf" },
+    { primary: "#e73a49", secondary: "#e58aa7", tertiary: "#f0a2c499" },
+    { primary: "#a1bb10", secondary: "#d6f060", tertiary: "#cded6ea3" },
+  ],
+  dark: [
+    { primary: "#313131", secondary: "#000000", tertiary: "#434343b8" },
+    { primary: "#801336", secondary: "#230e23", tertiary: "#5d101b" },
+    { primary: "#9a3800", secondary: "#490915", tertiary: "#191919" },
+    { primary: "#460033", secondary: "#160434", tertiary: "#2d0b3cac" },
+    { primary: "#092635", secondary: "#245745", tertiary: "#1b4242" },
+  ],
+};
+
 function syncColors() {
+  if (localStorage.getItem("currentTheme") === null) {
+    localStorage.setItem("mode", "light");
+    localStorage.setItem("currentTheme", idx);
+  }
+
+  let idx = localStorage.getItem("currentTheme");
+  let color_set = colors[localStorage.getItem("mode")][idx];
   for (const name of ["primary", "tertiary", "secondary"]) {
-    let color = localStorage.getItem(name);
-    document.documentElement.style.setProperty("--" + name, color);
+    document.documentElement.style.setProperty("--" + name, color_set[name]);
   }
 }
 

@@ -102,14 +102,12 @@ function switchLightDark(toggleButton) {
   // TODO: switch freename font color?
   if (iconClassList.contains("fa-moon")) {
     localStorage.setItem("mode", "dark");
-    iconClassList.remove("fa-moon");
-    iconClassList.add("fa-sun");
+    iconClassList = "fa-solid fa-sun";
     capsule.style.background = "white";
     capsule.children[0].style.color = "black";
   } else {
     localStorage.setItem("mode", "light");
-    iconClassList.remove("fa-sun");
-    iconClassList.add("fa-moon");
+    iconClassList = "fa-solid fa-moon";
     capsule.style.background = "black";
     capsule.children[0].style.color = "white";
   }
@@ -144,20 +142,23 @@ function setColor(ballIdx) {
     document.documentElement.style.setProperty("--" + name, color_set[name]);
   }
 
-  // TODO: switch border color when in dark mode
+  let themeCapsule = colorBalls[0].parentElement.parentElement.children[0];
   for (const [i, ball] of Object.entries(colorBalls)) {
     if (idx != i) {
       ball.children[0].classList.remove("cTopBorder");
       ball.children[1].classList.remove("cDownBorder");
-      // ball.children[0].classList.remove("dark");
-      // ball.children[1].classList.remove("dark");
     } else {
       ball.children[0].classList.add("cTopBorder");
       ball.children[1].classList.add("cDownBorder");
-      // if (localStorage.getItem("mode") == "dark") {
-      //   ball.children[0].classList.add("dark");
-      //   ball.children[1].classList.add("dark");
-      // }
+      if (localStorage.getItem("mode") == "dark") {
+        ball.children[0].style.borderColor = "white";
+        ball.children[1].style.borderColor = "white";
+        themeCapsule.firstElementChild.classList = "fa-solid fa-sun";
+      } else {
+        ball.children[0].style.borderColor = "black";
+        ball.children[1].style.borderColor = "black";
+        themeCapsule.firstElementChild.classList = "fa-solid fa-moon";
+      }
     }
   }
 }
