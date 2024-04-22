@@ -157,6 +157,18 @@ function setColor(ballIdx) {
         for (e of document.getElementsByClassName("freeName")) {
           e.style.color = "rgba(255, 255, 255, 0.765)";
         }
+        for (e of document.getElementsByClassName("location")) {
+          e.style.color = "rgba(255, 255, 255, 0.765)";
+        }
+        for (e of document.getElementsByClassName("time")) {
+          e.style.color = "rgba(255, 255, 255, 0.765)";
+        }
+        for (e of document.getElementsByClassName("subject")) {
+          e.style.color = "rgba(255, 255, 255, 0.765)";
+        }
+        for (e of document.getElementsByClassName("popCell")) {
+          e.style.color = "rgba(255, 255, 255, 0.765)";
+        }
         ball.children[0].style.borderColor = "white";
         ball.children[1].style.borderColor = "white";
         themeCapsule.firstElementChild.classList = "fa-solid fa-sun";
@@ -164,6 +176,18 @@ function setColor(ballIdx) {
         document.getElementsByTagName("body")[0].style.color = "black";
         document.getElementsByClassName("logoBar")[0].style.color = "black";
         for (e of document.getElementsByClassName("freeName")) {
+          e.style.color = "black";
+        }
+        for (e of document.getElementsByClassName("location")) {
+          e.style.color = "black";
+        }
+        for (e of document.getElementsByClassName("time")) {
+          e.style.color = "black";
+        }
+        for (e of document.getElementsByClassName("subject")) {
+          e.style.color = "black";
+        }
+        for (e of document.getElementsByClassName("popCell")) {
           e.style.color = "black";
         }
         ball.children[0].style.borderColor = "black";
@@ -225,6 +249,7 @@ function openPopup(e, name) {
     ball_row.innerHTML +=
       `<div class="statusBall2 ` + balls[name][i] + `"></div>`;
   }
+  setColor();
 }
 
 function createTimeString(timings) {

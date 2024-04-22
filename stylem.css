@@ -143,7 +143,6 @@ a {
 }
 .infoBox {
   display: flex;
-  color: #000;
   flex-direction: column;
   justify-content: start;
   align-items: start;
