@@ -151,7 +151,6 @@ function setColor(ballIdx) {
       ball.children[0].classList.add("cTopBorder");
       ball.children[1].classList.add("cDownBorder");
       if (localStorage.getItem("mode") == "dark") {
-        document.getElementsByTagName("body")[0].style.color = "white";
         document.getElementsByClassName("logoBar")[0].style.color =
           "rgba(255, 255, 255, 0.765)";
         for (e of document.getElementsByClassName("freeName")) {
@@ -173,7 +172,6 @@ function setColor(ballIdx) {
         ball.children[1].style.borderColor = "white";
         themeCapsule.firstElementChild.classList = "fa-solid fa-sun";
       } else {
-        document.getElementsByTagName("body")[0].style.color = "black";
         document.getElementsByClassName("logoBar")[0].style.color = "black";
         for (e of document.getElementsByClassName("freeName")) {
           e.style.color = "black";
@@ -360,3 +358,4 @@ function writeData(index, name, periodsToday) {
 for (const [index, name] of ordered_names.entries()) {
   setData(index, name);
 }
+setColor();

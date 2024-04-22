@@ -42,18 +42,8 @@ function syncColors() {
     document.documentElement.style.setProperty("--" + name, color_set[name]);
   }
 
-  if (mode == "dark") {
-    document.getElementsByClassName("titleBar")[0].style.color =
-      "rgba(255, 255, 255, 0.765)";
-    for (e of document.getElementsByClassName("dayData")) {
-      e.style.color = "rgba(255, 255, 255, 0.765)";
-    }
-  } else {
-    document.getElementsByClassName("titleBar")[0].style.color = "black";
-    for (e of document.getElementsByClassName("dayData")) {
-      e.style.color = "black";
-    }
-  }
+  document.getElementsByClassName("titleBar")[0].style.color =
+    mode == "dark" ? "rgba(255, 255, 255, 0.765)" : "black";
 }
 
 function writeData(periods) {
@@ -62,17 +52,28 @@ function writeData(periods) {
 
   document.getElementsByClassName("nameTitle")[0].innerHTML = nick_names[name];
 
+  let style =
+    localStorage.getItem("mode") == "dark"
+      ? "style='color: rgba(255, 255, 255, 0.765)'"
+      : "style='color: black'";
+
   var dayTables = profilePage.getElementsByClassName("dayBox");
   for (let i = 0; i < 5; i++) {
     let dayTable = dayTables[i];
     dayTable.innerHTML = dayTable.firstElementChild.outerHTML;
     for (let period of periods[i]) {
       dayTable.innerHTML +=
-        `<div class="dayCell"><div class="dayData">` +
+        `<div class="dayCell"><div class="dayData"` +
+        style +
+        `>` +
         period["venue"] +
-        `</div><div class="dayData">` +
+        `</div><div class="dayData"` +
+        style +
+        `>` +
         period["title"] +
-        `</div><div class="dayData">` +
+        `</div><div class="dayData"` +
+        style +
+        `>` +
         createTimeString(period["timings"]) +
         `</div></div>`;
     }
