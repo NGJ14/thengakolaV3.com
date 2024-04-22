@@ -43,24 +43,18 @@ function syncColors() {
   }
 
   if (mode == "dark") {
-    document.getElementsByTagName("body")[0].style.color = "white";
-    document.getElementsByClassName("logoBar")[0].style.color =
+    document.getElementsByClassName("titleBar")[0].style.color =
       "rgba(255, 255, 255, 0.765)";
-    for (e of document.getElementsByClassName("freeName")) {
+    for (e of document.getElementsByClassName("dayData")) {
       e.style.color = "rgba(255, 255, 255, 0.765)";
     }
   } else {
-    document.getElementsByTagName("body")[0].style.color = "black";
-    document.getElementsByClassName("logoBar")[0].style.color = "black";
-    for (e of document.getElementsByClassName("freeName")) {
+    document.getElementsByClassName("titleBar")[0].style.color = "black";
+    for (e of document.getElementsByClassName("dayData")) {
       e.style.color = "black";
     }
   }
 }
-
-fetch("./timetables/" + name + ".json")
-  .then((response) => response.json())
-  .then((json) => writeData(json));
 
 function writeData(periods) {
   let img_src = "./images/avatars/" + name + ".webp";
@@ -95,3 +89,8 @@ function createTimeString(timings) {
   }
   return timeString;
 }
+
+fetch("./timetables/" + name + ".json")
+  .then((response) => response.json())
+  .then((json) => writeData(json))
+  .then(syncColors());

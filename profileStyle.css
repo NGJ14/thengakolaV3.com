@@ -92,7 +92,7 @@ a {
   background: rgba(0, 0, 0, 0.9);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
-  color: var(--secondary);
+  color: rgba(255, 255, 255, 0.765);
   font-weight: 900;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -111,7 +111,7 @@ a {
 .dayData {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 600;
-  color: rgba(0, 0, 0, 0.784);
+  /* color: rgba(0, 0, 0, 0.784); */
 }
 #profilePage {
   background: var(--secondary);
