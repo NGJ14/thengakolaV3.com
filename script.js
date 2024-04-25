@@ -13,6 +13,10 @@ if ("serviceWorker" in navigator) {
   });
 }
 
+window.addEventListener("load", () => {
+  setColor();
+});
+
 var all = document.getElementById("all");
 var infoBoxes = document.getElementsByClassName("infoBox");
 let cardSections1 = [...document.getElementsByClassName("cardLeft")];
@@ -99,7 +103,6 @@ function switchLightDark(toggleButton) {
   let iconClassList = toggleButton.children[0].classList;
   let capsule = document.getElementById("themeCapsule");
 
-  // TODO: switch freename font color?
   if (iconClassList.contains("fa-moon")) {
     localStorage.setItem("mode", "dark");
     iconClassList = "fa-solid fa-sun";
@@ -111,19 +114,23 @@ function switchLightDark(toggleButton) {
     capsule.style.background = "black";
     capsule.children[0].style.color = "white";
   }
+
   setColor();
 }
 
 function setColor(ballIdx) {
   var idx = 0;
+  let mode = localStorage.getItem("mode");
+  var color_list = colors[mode];
 
-  // set initial values
-  if (localStorage.getItem("currentTheme") === null) {
-    localStorage.setItem("mode", "light");
-    localStorage.setItem("currentTheme", idx);
-  }
-
-  var color_list = colors[localStorage.getItem("mode")];
+  let class_names = [
+    "logoBar",
+    "freeName",
+    "location",
+    "time",
+    "subject",
+    "popCell",
+  ];
 
   var colorBalls = document.getElementById("colorCapsule").children;
   if (arguments.length == 0) {
@@ -143,6 +150,25 @@ function setColor(ballIdx) {
   }
 
   let themeCapsule = colorBalls[0].parentElement.parentElement.children[0];
+
+  // TODO: find out why freename is black on reload - mostly probably cache
+  if (mode == "dark") {
+    console.log("its dark in here");
+    themeCapsule.firstElementChild.classList = "fa-solid fa-sun";
+    for (let class_name of class_names) {
+      for (let e of document.getElementsByClassName(class_name)) {
+        e.style.color = "rgba(255, 255, 255, 0.765)";
+      }
+    }
+  } else {
+    themeCapsule.firstElementChild.classList = "fa-solid fa-moon";
+    for (let class_name of class_names) {
+      for (let e of document.getElementsByClassName(class_name)) {
+        e.style.color = "black";
+      }
+    }
+  }
+
   for (const [i, ball] of Object.entries(colorBalls)) {
     if (idx != i) {
       ball.children[0].classList.remove("cTopBorder");
@@ -150,47 +176,12 @@ function setColor(ballIdx) {
     } else {
       ball.children[0].classList.add("cTopBorder");
       ball.children[1].classList.add("cDownBorder");
-      if (localStorage.getItem("mode") == "dark") {
-        document.getElementsByClassName("logoBar")[0].style.color =
-          "rgba(255, 255, 255, 0.765)";
-        for (e of document.getElementsByClassName("freeName")) {
-          e.style.color = "rgba(255, 255, 255, 0.765)";
-        }
-        for (e of document.getElementsByClassName("location")) {
-          e.style.color = "rgba(255, 255, 255, 0.765)";
-        }
-        for (e of document.getElementsByClassName("time")) {
-          e.style.color = "rgba(255, 255, 255, 0.765)";
-        }
-        for (e of document.getElementsByClassName("subject")) {
-          e.style.color = "rgba(255, 255, 255, 0.765)";
-        }
-        for (e of document.getElementsByClassName("popCell")) {
-          e.style.color = "rgba(255, 255, 255, 0.765)";
-        }
+      if (mode == "dark") {
         ball.children[0].style.borderColor = "white";
         ball.children[1].style.borderColor = "white";
-        themeCapsule.firstElementChild.classList = "fa-solid fa-sun";
       } else {
-        document.getElementsByClassName("logoBar")[0].style.color = "black";
-        for (e of document.getElementsByClassName("freeName")) {
-          e.style.color = "black";
-        }
-        for (e of document.getElementsByClassName("location")) {
-          e.style.color = "black";
-        }
-        for (e of document.getElementsByClassName("time")) {
-          e.style.color = "black";
-        }
-        for (e of document.getElementsByClassName("subject")) {
-          e.style.color = "black";
-        }
-        for (e of document.getElementsByClassName("popCell")) {
-          e.style.color = "black";
-        }
         ball.children[0].style.borderColor = "black";
         ball.children[1].style.borderColor = "black";
-        themeCapsule.firstElementChild.classList = "fa-solid fa-moon";
       }
     }
   }
@@ -355,7 +346,12 @@ function writeData(index, name, periodsToday) {
   }
 }
 
+// set initial values
+if (localStorage.getItem("currentTheme") === null) {
+  localStorage.setItem("mode", "light");
+  localStorage.setItem("currentTheme", idx);
+}
+
 for (const [index, name] of ordered_names.entries()) {
   setData(index, name);
 }
-setColor();
